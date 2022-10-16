@@ -17,6 +17,7 @@ namespace EventBus.Tests
 
         public async Task Handle(TestIntegrationEvent @event)
         {
+            await Task.CompletedTask;
             Handled = true;
         }
     }
